@@ -10,7 +10,7 @@ import productApi from 'api/productApi';
 import { useHistory, useLocation } from 'react-router-dom';
 import queryString from 'query-string';
 import ProductFilters from './components/ProductFilters/ProductFilter';
-import ClipLoader from 'react-spinners/ClipLoader';
+// import ClipLoader from 'react-spinners/ClipLoader';
 import ProductSkeletonList from './ProductSkeletonList';
 function Product() {
   const location = useLocation();
@@ -81,7 +81,7 @@ function Product() {
       ) : (
         <React.Fragment>
           <NavBar />
-          <Slider />
+          {/* <Slider /> */}
           <Coupon />
           <ProductFilters onChange={handleFiltersChange} />
           <div className={styles.container}>
